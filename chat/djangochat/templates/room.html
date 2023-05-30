@@ -60,10 +60,6 @@ body {
 
 <div id="display">
 
-<!-- <div class="container darker">
-  <b>Tom</b><p>Hello Everyone, How Are You Guys Doing?</p>
-  <span class="time-left">20th, April 2021</span>
-</div> -->
 
 </div>
 
@@ -75,7 +71,7 @@ setInterval(function(){
         type: 'GET',
         url : "/getMessages/{{room}}/",
         success: function(response){
-            console.log(response);
+            //console.log(response);
             $("#display").empty();
             for (var key in response.messages)
             {
